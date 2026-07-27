@@ -1,0 +1,9 @@
+paths:
+  raw_data: data/raw
+  processed_data: data/processed
+  models: models
+
+training:
+  prediction_days: 90
+
+random_seed: 42
