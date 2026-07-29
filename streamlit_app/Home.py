@@ -2,7 +2,7 @@ import streamlit as st
 from data_loader import load_customer_data
 from style import inject_custom_css, SEGMENT_COLORS
 
-st.set_page_config(page_title="ValueLens AI", layout="wide", page_icon="💡")
+st.set_page_config(page_title="ValueLens AI", layout="wide")
 inject_custom_css()
 
 df, thresholds = load_customer_data()
