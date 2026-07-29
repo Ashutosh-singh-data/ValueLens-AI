@@ -15,7 +15,15 @@ comparison_data = {
     "MAE ($)": [560.73, 646.30, 522.73, 497.76],
     "RMSE ($)": [1677.34, 1552.41, 1446.32, 1399.11],
 }
-st.dataframe(comparison_data, use_container_width=True)
+import pandas as pd
+
+comparison_df = pd.DataFrame(comparison_data)
+best_row = comparison_df['R²'].idxmax()
+
+def highlight_best(row):
+    return ['background-color: #2196F3; color: white' if row.name == best_row else '' for _ in row]
+
+st.dataframe(comparison_df.style.apply(highlight_best, axis=1), use_container_width=True)
 
 st.caption(
     "XGBoost was selected as the production model. Note BG/NBD has a higher MAE "

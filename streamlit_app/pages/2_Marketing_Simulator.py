@@ -1,17 +1,28 @@
 import streamlit as st
 from data_loader import load_customer_data
 from valuelens.roi_simulator import simulate_roi, SEGMENT_ASSUMPTIONS
+from style import segment_badge
 
 st.set_page_config(page_title="Marketing Simulator", layout="wide")
 
 df, thresholds = load_customer_data()
 
 st.title("Marketing Simulator")
-
 st.write("Select which customer segments to target with a campaign, and see the projected business impact.")
 
-all_segments = ['VIP', 'Loyal', 'Growth', 'At Risk']
-selected_segments = st.multiselect("Target Segments", all_segments, default=all_segments)
+ALL_SEGMENTS = ['VIP', 'Loyal', 'Growth', 'At Risk']
+
+st.write("Target Segments:")
+badge_cols = st.columns(4)
+for col, seg in zip(badge_cols, ALL_SEGMENTS):
+    with col:
+        st.markdown(segment_badge(seg), unsafe_allow_html=True)
+
+selected_segments = st.multiselect(
+    "Select segments to simulate",
+    ALL_SEGMENTS,
+    default=ALL_SEGMENTS
+)
 
 if selected_segments:
     result = simulate_roi(df, target_segments=selected_segments)
@@ -26,7 +37,7 @@ if selected_segments:
     col5.metric("ROI", f"{result['roi_percent']}%" if result['roi_percent'] is not None else "N/A")
 
     st.subheader("Compare: Target Everyone vs. Your Selection")
-    everyone_result = simulate_roi(df, target_segments=all_segments)
+    everyone_result = simulate_roi(df, target_segments=ALL_SEGMENTS)
 
     comparison_df = {
         "Scenario": ["Target Everyone", "Your Selection"],
