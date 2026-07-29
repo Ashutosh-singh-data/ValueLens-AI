@@ -164,4 +164,4 @@ Distributed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
 ## Author
 
-Ashu — B.Tech, Production & Industrial Engineering, MNNIT Allahabad. Built as a portfolio project exploring the intersection of applied ML and business decision support.
+Ashutosh singh — B.Tech, Production & Industrial Engineering, MNNIT Allahabad. Built as a portfolio project exploring the intersection of applied ML and business decision support.
