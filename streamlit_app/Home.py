@@ -7,7 +7,7 @@ inject_custom_css()
 
 df, thresholds = load_customer_data()
 
-st.title("💡 ValueLens AI — Executive Dashboard")
+st.title("ValueLens AI — Executive Dashboard")
 st.caption("Predictive customer lifetime value and marketing decision support")
 
 col1, col2, col3 = st.columns(3)
