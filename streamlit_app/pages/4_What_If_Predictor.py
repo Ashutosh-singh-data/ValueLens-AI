@@ -11,7 +11,7 @@ from valuelens.recommender import get_recommendation
 st.set_page_config(page_title="What-If Predictor", layout="wide")
 
 st.title("🔮 What-If Customer Predictor")
-st.write("Adjust a customer's behavior below and see the model's live prediction — no need to pick an existing customer.")
+st.write("Adjust a customer's behavior below and see the model's live prediction.")
 
 df, _ = load_customer_data()
 model = load_model()
