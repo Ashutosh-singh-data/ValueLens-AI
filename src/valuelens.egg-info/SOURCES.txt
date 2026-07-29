@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/valuelens/__init__.py
+src/valuelens/feature_engineering.py
+src/valuelens/predict.py
+src/valuelens/preprocessing.py
+src/valuelens/recommender.py
+src/valuelens/roi_simulator.py
+src/valuelens/train.py
+src/valuelens.egg-info/PKG-INFO
+src/valuelens.egg-info/SOURCES.txt
+src/valuelens.egg-info/dependency_links.txt
+src/valuelens.egg-info/top_level.txt
+tests/test_feature_engineering.py
+tests/test_preprocessing.py
