@@ -8,9 +8,6 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Data
-data/raw/
-data/processed/
 
 # Models
 models/
