@@ -7,8 +7,7 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/dashboard-Streamlit-FF4B4B)](https://streamlit.io/)
 
-🔗 **Live Demo:** [add your Streamlit Cloud link here]
-
+🔗 **Live Demo:** https://valuelens-ai-analytics.streamlit.app/
 ---
 
 ## The Problem
