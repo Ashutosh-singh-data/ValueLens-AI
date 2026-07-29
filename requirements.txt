@@ -12,3 +12,4 @@ lifetimes
 scipy
 pyarrow
 GitPython
+pytest
