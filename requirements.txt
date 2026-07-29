@@ -13,3 +13,4 @@ scipy
 pyarrow
 GitPython
 pytest
+-e .
