@@ -3,7 +3,7 @@
 **Predicting customer lifetime value and turning it into targeted marketing decisions.**
 
 [![CI](https://github.com/Ashutosh-singh-data/ValueLens-AI/actions/workflows/ci.yml/badge.svg)](https://github.com/Ashutosh-singh-data/ValueLens-AI/actions)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/dashboard-Streamlit-FF4B4B)](https://streamlit.io/)
 
