@@ -1,0 +1,14 @@
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "valuelens-ai"
+version = "0.1.0"
+description = "ValueLens AI MLOps Project"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["Valuelens_AI*"]

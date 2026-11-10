@@ -1,0 +1,17 @@
+
+numpy
+pandas
+scipy
+scikit-learn
+imbalanced-learn
+matplotlib
+seaborn
+pymongo
+certifi
+dill
+PyYAML
+python-dotenv
+ipykernel
+jupyter
+
+-e .
