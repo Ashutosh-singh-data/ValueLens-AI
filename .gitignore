@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Secrets (never commit these)
+.env
+*.env
+.env.*
+
+# Pipeline outputs
+artifact/
+logs/
+*.log
+
+# Data (large files, versioned with DVC later)
+data/raw/
+data/processed/
+*.csv
+*.xlsx
+*.parquet
+
+# Models and arrays
+models/
+*.pkl
+*.npy
+
+# Experiment tracking 
+mlruns/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
