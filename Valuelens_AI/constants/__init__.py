@@ -13,7 +13,6 @@ ARTIFACT_DIR: str = "artifact"
 TRAIN_FILE_NAME: str = "train.csv"
 TEST_FILE_NAME: str = "test.csv"
 
-FILE_NAME: str = "online_retail_II.csv"
 MODEL_FILE_NAME = "model.pkl"
 
 """
@@ -24,3 +23,20 @@ DATA_INGESTION_DIR_NAME: str = "data_ingestion"
 DATA_INGESTION_FEATURE_STORE_DIR: str = "feature_store"
 DATA_INGESTION_INGESTED_DIR: str = "ingested"
 DATA_INGESTION_TRAIN_TEST_SPLIT_RATIO: float = 0.2
+
+# Pipeline
+PIPELINE_NAME: str = "valuelens"
+ARTIFACT_DIR: str = "artifact"
+
+# Data columns
+DATE_COLUMN: str = "InvoiceDate"
+
+# Files
+FILE_NAME: str = "online_retail_II.csv"
+HISTORY_FILE_NAME: str = "history.csv"
+FUTURE_FILE_NAME: str = "future.csv"
+
+
+# Time-based split
+CUTOFF_DATE: str = "2011-06-01"
+PREDICTION_WINDOW_MONTHS: int = 6
